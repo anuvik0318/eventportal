@@ -1,0 +1,14 @@
+# Maven
+target
+
+# Eclipse
+.settings/**
+.project
+.classpath
+.metadata
+*.tmp
+*.bak
+*.swp
+
+# JRebel
+rebel.xml
