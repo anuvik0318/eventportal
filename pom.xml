@@ -4,7 +4,7 @@
 
   <groupId>com.aep</groupId>
   <artifactId>eventportal</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
 
   <name>eventportal</name>
