@@ -8,18 +8,18 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title :String = 'Anvik Event Portal';
+  title :String = '';
   constructor(private  httpClient:HttpClient) {}
   
   ngOnInit() {
        this.getEmployees().subscribe(res => {
-        this.title = res;
+        this.title = res["t"];
        });
     }
 
-    public getEmployees(): Observable<String>
+    public getEmployees(): Observable<JSON>
     {
-      const url = 'http://localhost:8080/test';
-      return this.httpClient.get<String>(url);
+      const url = '/test';
+      return this.httpClient.get<JSON>(url);
     }
 }
