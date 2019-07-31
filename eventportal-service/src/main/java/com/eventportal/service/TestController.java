@@ -11,9 +11,22 @@ import com.google.gson.JsonObject;
 public class TestController {
 	
 	@GetMapping("/test")
-	public ResponseEntity<String> get() {
-		JsonObject jsonResponse = new JsonObject();			
-		jsonResponse.addProperty("t", "Anvik Event Portal");
-		return new ResponseEntity<String>(jsonResponse.toString(), HttpStatus.OK);
+	public User get() {
+		User user = new User();			
+		user.setName("Anvik event portal");
+		return user;
+	}
+	
+	class User {
+		String name;
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+		
 	}
 }

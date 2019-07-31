@@ -22,6 +22,7 @@
 		<fongo.version>2.0.6</fongo.version>
 		<flyway.version>4.1.1</flyway.version>
 		<owasp.encoder.version>1.2.1</owasp.encoder.version>
+		<hibernate.version>5.4.2.FINAL</hibernate.version>
 	</properties>
 
 	<profiles>
@@ -83,8 +84,10 @@
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
 		<!-- Databases -->
-		<!-- <dependency> <groupId>com.h2database</groupId> <artifactId>h2</artifactId> 
-			</dependency> -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
@@ -92,6 +95,10 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
