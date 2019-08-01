@@ -1,1 +1,0 @@
-alter table sys_user add column phone CHAR(10);
