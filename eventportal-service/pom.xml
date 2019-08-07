@@ -216,7 +216,7 @@
 				<version>1.6</version>
 				<configuration>
 					<nodeVersion>v11.10.0</nodeVersion>
-					<npmVersion>6.10.2</npmVersion>
+					<npmVersion>6.10.3</npmVersion>
 					<workingDirectory>src/main/webapp/eventportal-ui/</workingDirectory>
 				</configuration>
 				<executions>
@@ -257,7 +257,7 @@
 							<outputDirectory>${project.build.directory}/classes/resources/</outputDirectory>
 							<resources>
 								<resource>
-									<directory>src/main/webapp/eventportal-ui/dist/eventportal-ui/</directory>
+									<directory>src/main/webapp/eventportal-ui/dist/</directory>
 								</resource>
 							</resources>
 						</configuration>

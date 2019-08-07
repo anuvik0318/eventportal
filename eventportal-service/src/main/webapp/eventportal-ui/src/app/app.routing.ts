@@ -3,7 +3,8 @@ import { Routes } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 
-export const AppRoutes: Routes = [{
+export const AppRoutes: Routes = [
+  {
   path: '',
   redirectTo: 'authentication/login',
   pathMatch: 'full',
