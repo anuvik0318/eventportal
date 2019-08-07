@@ -4,7 +4,7 @@
 @import "../mixins";
 
 $hover-font-color:#fff;
-:host /deep/ {
+:host ::ng-deep {
 mat-list.profile-list mat-list-item .mat-list-item-content {
   padding: 0!important;
   font-size: 13px!important;
@@ -44,7 +44,7 @@ mat-list.profile-list mat-list-item .mat-list-item-content {
 }
 
 
-[dir="rtl"] :host /deep/ {
+[dir="rtl"] :host ::ng-deep {
   .activity-stream {
     &::before {
       left: auto;

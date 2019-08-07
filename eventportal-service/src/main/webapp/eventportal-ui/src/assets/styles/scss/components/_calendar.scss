@@ -3,7 +3,7 @@
 @import "../app.variables";
 @import "../mixins";
 
-:host /deep/ {
+:host ::ng-deep {
   .cal-day-view {
     .cal-hour-rows {
       border-top: 0;

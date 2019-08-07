@@ -6,7 +6,7 @@
     display: block;
 }
 
-:host /deep/ {
+:host ::ng-deep {
     mat-sidenav {
         width: 200px;
     }

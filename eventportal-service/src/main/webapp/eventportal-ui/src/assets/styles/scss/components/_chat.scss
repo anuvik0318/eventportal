@@ -90,7 +90,7 @@
   }
 }
 
-.app-dark :host /deep/ {
+.app-dark :host ::ng-deep {
   .them .chat-conversation-message {
     background: mat-color($dark-background, card);
   }
@@ -102,7 +102,7 @@
   }
 }
 
-[dir="rtl"] :host /deep/ {
+[dir="rtl"] :host ::ng-deep {
   .me .chat-conversation-avatar {
     @include margin-left(0);
     @include margin-right($gutter);

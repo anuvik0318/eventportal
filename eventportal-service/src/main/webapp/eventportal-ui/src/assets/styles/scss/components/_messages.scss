@@ -2,7 +2,7 @@
 @import "../mixins/bi-app/bi-app-ltr";
 @import "../app.variables";
 @import "../mixins";
-:host /deep/ {
+:host ::ng-deep {
     [appAccordionToggle] {
         cursor: pointer;
     }
@@ -86,7 +86,7 @@
     }
 }
 
-.app-dark :host /deep/ {
+.app-dark :host ::ng-deep {
     .messages-list {
         .mat-list-item {
             background: mat-color($dark-background, card);
@@ -95,7 +95,7 @@
     }
 }
 
-[dir="rtl"] :host /deep/ {
+[dir="rtl"] :host ::ng-deep {
     .messages-nav {
         mat-icon {
             margin-right: 0;

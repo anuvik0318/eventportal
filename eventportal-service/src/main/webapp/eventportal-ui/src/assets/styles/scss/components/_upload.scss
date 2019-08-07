@@ -12,7 +12,7 @@
   @include rounded($border-radius-base);
 }
 
-.app-dark :host /deep/ {
+.app-dark :host ::ng-deep {
   .my-drop-zone {
     background: mat-color($dark-background, card);
   }

@@ -3,7 +3,7 @@
 @import "../app.variables";
 @import "../mixins";
 
-:host /deep/ {
+:host ::ng-deep {
   .node-wrapper {
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@
   }
 }
 
-[dir=rtl] :host /deep/ {
+[dir=rtl] :host ::ng-deep {
   .tree-children {
     padding-left: 0;
     padding-right: 20px;
