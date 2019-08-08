@@ -54,14 +54,13 @@
 
   "DND": "Glisser déposer",
 
-  "CARDS" : "Cards",
   "BASIC" : "Basic",
   "MODERN" : "Modern",
 
   "PAGES": "Pages",
   "INVOICE": "Facture d'achat",
   "TIMELINE": "Chronologie",
-  "USER": "Utilisateur",
+  "CLIENT": "Utilisateur",
   "BLANK": "Blanc",
   "PRICING": "Pricing",
 

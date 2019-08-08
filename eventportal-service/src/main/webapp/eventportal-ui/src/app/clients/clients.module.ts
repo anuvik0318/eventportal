@@ -6,24 +6,24 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule, MatCardModule, MatButtonModule, MatListModule, MatProgressBarModule, MatMenuModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { UserListComponent } from './user-list/userlist.component';
+import { ClientProfileComponent } from './client-profile/client-profile.component';
+import { ClientListComponent } from './client-list/clientlist.component';
 
-import { UsersRoutes } from './users.routing';
+import { ClientsRoutes } from './clients.routing';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forChild(UsersRoutes),
+    RouterModule.forChild(ClientsRoutes),
      MatIconModule,
 
    FlexLayoutModule
   ],
   declarations: [ 
-    UserProfileComponent,
-    UserListComponent
+    ClientProfileComponent,
+    ClientListComponent
   ]
 })
 
-export class UsersModule {}
+export class ClientsModule {}

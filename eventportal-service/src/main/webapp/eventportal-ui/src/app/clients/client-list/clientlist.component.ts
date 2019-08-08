@@ -1,12 +1,12 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'ms-userlist',
-    templateUrl:'./userlist-component.html',
-    styleUrls: ['./userlist-component.scss'],
+    selector: 'ms-clientlist',
+    templateUrl:'./clientlist-component.html',
+    styleUrls: ['./clientlist-component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class UserListComponent implements OnInit {
+export class ClientListComponent implements OnInit {
 
   constructor() {}
 

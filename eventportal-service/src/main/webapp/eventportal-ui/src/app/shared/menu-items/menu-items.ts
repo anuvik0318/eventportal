@@ -26,6 +26,16 @@ const MENUITEMS : Menu[] = [
     name: 'HOME',
     type: 'link',
     icon: 'explore'
+  }, 
+  {
+    state: 'clients',
+    name: 'CLIENTS',
+    type: 'sub',
+    icon: 'person',
+    children: [
+      {state: 'clientlist', name: 'CLIENT LIST'},
+      {state: 'clientprofile', name: 'CLIENT PROFILE'},
+    ]
   },
   {
     state: 'apps',
@@ -178,16 +188,6 @@ const MENUITEMS : Menu[] = [
       {state: 'contact', name: 'CONTACT'},
       {state: 'pricing', name: 'PRICING'},
       {state: 'blank', name: 'BLANK'},
-    ]
-  },
-  {
-    state: 'user-pages',
-    name: 'USERS',
-    type: 'sub',
-    icon: 'person',
-    children: [
-      {state: 'userlist', name: 'USER LIST'},
-      {state: 'userprofile', name: 'USER PROFILE'},
     ]
   },
   {

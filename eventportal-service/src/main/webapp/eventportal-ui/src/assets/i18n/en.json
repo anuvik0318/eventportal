@@ -1,5 +1,5 @@
 {
-  "HOME": "Home",
+  "HOME": "Dashboard",
 
   "APPS": "Apps",
   "CALENDAR": "Calendar",
@@ -70,7 +70,6 @@
 
   "DND": "Drag and Drop",
 
-  "CARDS" : "Cards",
   "BASIC" : "Basic",
   "MODERN" : "Modern",
 
@@ -82,9 +81,9 @@
   "BLANK": "Blank",
   "PRICING": "Pricing",
 
-  "USERS": "Users",
-  "USER LIST": "User List",
-  "USER PROFILE": "User Profile",
+  "CLIENTS": "Clients",
+  "CLIENT LIST": "Client List",
+  "CLIENT PROFILE": "Client Profile",
 
   "GALLERY": "Gallery",
   "GALLERY SIMPLE": "Gallery Simple",

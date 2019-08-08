@@ -14,7 +14,10 @@ export const AppRoutes: Routes = [
   children: [{
     path: 'home',
     loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
-  }, {
+  },{
+    path: 'clients',
+    loadChildren: () => import('./clients/clients.module').then(m => m.ClientsModule)
+  },{
     path: 'apps',
     loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule)
   },{
@@ -44,9 +47,6 @@ export const AppRoutes: Routes = [
   },{
     path: 'pages',
     loadChildren: () => import('./custom-pages/pages.module').then(m => m.PagesDemoModule)
-  },{
-    path: 'user-pages',
-    loadChildren: () => import('./user-pages/users.module').then(m => m.UsersModule)
   },{
     path: 'gallery',
     loadChildren: () => import('./gallery/gallery.module').then(m => m.GalleryDemoModule)

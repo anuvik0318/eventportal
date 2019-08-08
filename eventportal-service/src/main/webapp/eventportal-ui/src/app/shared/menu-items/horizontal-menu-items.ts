@@ -139,13 +139,13 @@ const HORIZONTALMENUITEMS = [
       {state: 'pages/pricing', name: 'PRICING'},
       {state: 'pages/blank', name: 'BLANK'},
       {
-        state: 'user-pages',
-        name: 'USERS',
+        state: 'clients',
+        name: 'CLIENTS',
         type: 'super-sub',
         icon: 'person',
         subchildren: [
-          {state: 'user-pages/userlist', name: 'USER LIST'},
-          {state: 'user-pages/userprofile', name: 'USER PROFILE'},
+          {state: 'clients/', name: 'CLIENT LIST'},
+          {state: 'clients/clientprofile', name: 'CLIENT PROFILE'},
         ]
       },
       {
