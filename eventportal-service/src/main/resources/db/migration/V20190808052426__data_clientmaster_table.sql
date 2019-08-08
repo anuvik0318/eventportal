@@ -1,0 +1,1 @@
+insert into client_master (first_name, last_name, phone, email) values ('Saritha', 'Nandimala', '665-885-9874', 'saritha67@gmail.com');

@@ -1,4 +1,4 @@
-package com.aep.client;
+package com.aep.client.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,7 +21,7 @@ public class Client {
 	private String lastName;
 	@Column(length = 50)
 	private String email;
-	@Column(length = 11, nullable = false)
+	@Column(length = 12, nullable = false)
 	private String phone;
 	
 }
