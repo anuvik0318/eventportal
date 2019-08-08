@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { single, multi } from './charts.data';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,6 +9,7 @@ import { single, multi } from './charts.data';
 })
 export class DashboardComponent {
 
+  clientName: String = 'Saritha';
   public single: any[];
   public multi: any[];
 
@@ -205,7 +207,7 @@ export class DashboardComponent {
     subject: 'Onsectetur adipisic',
   }, ];
 
-  constructor() {
+  constructor(private  httpClient:HttpClient) {
     this.fetch((data) => { this.rows = data; });
     Object.assign(this, {single, multi}) 
   }
@@ -223,4 +225,9 @@ export class DashboardComponent {
     };
     req.send();
   }
+  ngOnInit() {
+    /* this.httpClient.get('/test').subscribe(res => {
+      this.clientName = res["clientName"];
+    }); */
+ }
 }

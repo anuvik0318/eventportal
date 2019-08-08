@@ -1,4 +1,4 @@
-package com.eventportal.service;
+package com.aep.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,14 +10,14 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @EnableCaching
 @EntityScan(basePackages = {"com.eventportal.user"}) 
-public class EventportalApplication extends SpringBootServletInitializer {
+public class EventPortalApplication extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(EventportalApplication.class);
+		return builder.sources(EventPortalApplication.class);
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(EventportalApplication.class, args);
+		SpringApplication.run(EventPortalApplication.class, args);
 	}
 }
