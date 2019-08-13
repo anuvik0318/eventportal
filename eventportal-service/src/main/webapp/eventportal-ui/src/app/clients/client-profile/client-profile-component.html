@@ -16,11 +16,11 @@
     </div>
     <div fxLayout="row wrap">
       <div fxFlex="100" class="mt-1">
-        <div class="profile-content">
+        <div class="profile-content" *ngIf="!booking">
           <div fxLayout="row wrap">
             <div fxFlex.sm="100" fxFlex.xs="100" fxFlex.md="33.33" fxFlex.lg="33.33" fxFlex.xl="33.33" fxFlex="100" class="m-gap p-gap">
               <div class="card-shadow">
-                <a [routerLink]="['/clients/clientprofile']">
+                <a (click)="loadBooking(true)">
                   <mat-card>
                     <mat-card-header>
                       <mat-card-title><i class="fa fa-calendar"></i> Bookings</mat-card-title>
@@ -101,10 +101,12 @@
           </div>
         </div>
       </div>
-<!--       <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100" class="align-self-center"></div> -->
+      <!--       <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100" class="align-self-center"></div> -->
     </div>
     <div fxLayout="row wrap">
-         <div class="profile-content">
-         <div></div></div>  </div>   
+      <div class="profile-content">
+        <div><app-client-booking *ngIf="booking"></app-client-booking></div>
+      </div>
+    </div>
   </div>
 </div>

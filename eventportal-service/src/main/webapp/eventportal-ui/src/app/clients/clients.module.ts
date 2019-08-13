@@ -10,10 +10,11 @@ import { ClientProfileComponent } from './client-profile/client-profile.componen
 import { ClientListComponent } from './client-list/clientlist.component';
 
 import { ClientsRoutes } from './clients.routing';
+import { ClientBookingComponent } from './client-booking/client-booking.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, RouterModule.forChild(ClientsRoutes), MatIconModule, MatCardModule, MatButtonModule, MatListModule, MatProgressBarModule, 
     MatMenuModule, FlexLayoutModule, MatGridListModule],
-  declarations: [ClientProfileComponent, ClientListComponent]
+  declarations: [ClientProfileComponent, ClientListComponent, ClientBookingComponent]
 })
 export class ClientsModule {}

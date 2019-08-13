@@ -8,13 +8,16 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class ClientProfileComponent implements OnInit {
-
+  booking: Boolean = false;
   constructor() {}
 
   ngOnInit() {
 
   }
-	
+  
+  loadBooking(value: Boolean){
+    this.booking = value;
+  }
 }
 
 
