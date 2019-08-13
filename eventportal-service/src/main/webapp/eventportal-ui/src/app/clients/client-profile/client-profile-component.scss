@@ -1,0 +1,71 @@
+$red: #f5515f;
+$blue: #05abe0;
+$grey: #343434;
+$p: 12px;
+//wheather
+.card-wheather {
+  height: 220px;
+  color: #fff;
+}
+
+.card-header-image {
+  background-size: cover;
+}
+
+.city {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 15px;
+}
+
+.sun {
+  font-size: 15px;
+  height: 25px;
+}
+
+.grad-blue {
+  background: linear-gradient(58deg, #f44336, #673ab7);
+  color: #fff;
+}
+
+.grad-green {
+  background: linear-gradient(58deg, #009688, #673ab7);
+  color: #fff;
+}
+
+.grad-red {
+  background: linear-gradient(58deg, #f44336, #673ab7);
+  color: #fff;
+}
+.card-wheather{
+  padding: 2rem;
+}
+.temp {
+  font-size: 50px;
+  display: inline-block;
+}
+.card-shadow{
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s linear 0s;
+}
+.card-shadow:hover,
+.hover {
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width:1199px) {
+  .city {
+    font-size: 25px;
+  }
+  .sun {
+    font-size: 15px;
+    height: 20px;
+  }
+  .date {
+    font-size: 10px;
+  }
+}

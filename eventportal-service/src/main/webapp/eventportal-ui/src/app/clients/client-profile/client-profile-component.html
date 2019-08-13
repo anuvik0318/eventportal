@@ -1,112 +1,110 @@
 <div class="user-profile relative">
-   <div class="profile-cover">
-   </div>
-   <div class="">
-      <div fxLayout="row wrap" class="profile-w">
-         <div fxFlex.gt-sm="25" fxFlex.gt-xs="25" fxFlex="20">
-         </div>
-         <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" fxFlex="80" class="user-links">
-            <ul class="profile-menu">
-               <li><a href="">Photography<span class="block text-lg-center">$450</span></a></li>
-               <li><a href="">Videography<span class="block text-lg-center">$400</span></a></li>
-               <li><a href="">Decoration<span class="block text-lg-center">$1250</span></a></li>
-               <li><a href="">Total<span class="block text-lg-center">$2100</span></a></li>
-            </ul>
-         </div>
-         <div fxFlex.gt-sm="25" fxFlex.gt-xs="25" fxFlex="100" class="align-self-center">
-            <button type="button" class="UserActions-editButton edit-button EdgeButton EdgeButton--tertiary" data-scribe-element="profile_edit_button">
-            <span class="button-text">Edit profile</span>
-            </button>
-         </div>
+  <div class="">
+    <div fxLayout="row wrap">
+      <div fxFlex="100" class="relative">
+        <div class="profile-info">
+          <h3 class="profile-name"><strong>Saritha Nandimala</strong></h3>
+          <span><i class="fa fa-envelope"></i>saritha34@yahoo.com</span>
+          <span><i class="fa fa-phone"></i>317-895-0968</span>
+          <span><i class="fa fa-calendar"></i>10 August,2019</span>
+          <span><i class="fa fa-map-marker"></i>Chicago,IL</span>
+        </div>
+        <div class="profile-avatar">
+          <img src="../../../assets/images/test3.jpg" width="200" height="200" alt="user" />
+        </div>
       </div>
-      <div fxLayout="row wrap">
-         <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100" class="relative">
-            <div class="profile-avatar">
-               <img src="../../../assets/images/test3.jpg" width="200" height="200" alt="user">
+    </div>
+    <div fxLayout="row wrap">
+      <div fxFlex="100" class="mt-1">
+        <div class="profile-content">
+          <div fxLayout="row wrap">
+            <div fxFlex.sm="100" fxFlex.xs="100" fxFlex.md="33.33" fxFlex.lg="33.33" fxFlex.xl="33.33" fxFlex="100" class="m-gap p-gap">
+              <div class="card-shadow">
+                <a [routerLink]="['/clients/clientprofile']">
+                  <mat-card>
+                    <mat-card-header>
+                      <mat-card-title><i class="fa fa-calendar"></i> Bookings</mat-card-title>
+                    </mat-card-header>
+                    <div class="card-wheather grad-blue">
+                      <div class="city">Services: 3</div>
+                      <div class="date">Photography - Videography - Decoration</div>
+                      <br />
+                      <div class="sun">11:30AM - 2:30PM</div>
+                      <div class="sun">Aug 4, 2019</div>
+                      <div class="sun">Chicago, IL</div>
+                    </div>
+                    <mat-card-actions>
+                      <button mat-button color="grad-blue" routerLink="/cards/basic">View Details</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </a>
+              </div>
             </div>
-            <div class="profile-info">
-               <h3 class="profile-name"><strong>Saritha Nandimala</strong></h3>
-               <span><i class="fa fa-envelope"></i>saritha34@yahoo.com</span>
-               <span><i class="fa fa-clock-o"></i>11:30am - 3:30pm</span>
-               <span><i class="fa fa-calendar"></i>10 August,2019</span>
-               <span><i class="fa fa-map-marker"></i>Chicago,IL</span>
+            <div fxFlex.sm="100" fxFlex.xs="100" fxFlex.md="33.33" fxFlex.lg="33.33" fxFlex.xl="33.33" fxFlex="100" class="m-gap p-gap">
+              <div class="card-shadow">
+                <a [routerLink]="['/clients/clientprofile']">
+                  <mat-card>
+                    <mat-card-header>
+                      <mat-card-title><i class="fa fa-credit-card"></i> Payments</mat-card-title>
+                    </mat-card-header>
+                    <div class="card-wheather grad-green">
+                      <div>
+                        <div class="date">Total Income</div>
+                        <div class="city">
+                          <span class="amount"><span class="currency-symbol">$</span>2100.00</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="date">Total Expense</div>
+                        <div class="city">
+                          <span class="amount"><span class="currency-symbol">$</span>359.00</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="date">Total Profit</div>
+                        <div class="city">
+                          <span class="amount"><span class="currency-symbol">$</span>1741.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <mat-card-actions>
+                      <button mat-button color="grad-blue" routerLink="/cards/basic">How?</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </a>
+              </div>
             </div>
-         </div>
-         <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" fxFlex="100" class="mt-1">
-            <div class="profile-content">
-               <div class="profile-head">
-                  <h4>Services</h4>
-                  <hr>
-               </div>
-               <div class="profile-cont">
-                  <ul class="pl-0">
-                     <li>
-                        <div fxLayout="row">
-                           <div fxFlex.xs="15" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="15"> <img class="profile-thumb" src="../../../assets/images/camera.png" width="80" height="80" alt="user">
-                           </div>
-                           <div class="pl-1 pr-1 profile-i" fxFlex.xs="85" fxFlex.sm="85" fxFlex.md="85" fxFlex.lg="85" fxFlex.xl="85">
-                              <div>
-                                 <span class="post-profile-head">Photography</span>
-                                 <span class="twitter-uname">$450</span>
-                                 <span class="time">(11:30am - 3:30pm)</span>
-                                 <p>Continued jobless claims at lowest level in more than 28 years</p>
-                              </div>
-                              <div class="profile-action"><a href=""><i class="fa fa-retweet"></i></a><a href=""><i class="fa fa-comment-o"></i></a><a href=""><i class="fa fa-heart-o"></i></a></div>
-                              <!-- https://photos.google.com/album/AF1QipOL_PuDA2OknHfOMoC5HeNx-XcjBWLP7wWFO8UJ -->
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div fxLayout="row">
-                           <div fxFlex.xs="15" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="15"> <img class="profile-thumb" src="../../../assets/images/video-camera.png" width="80" height="80" alt="user">
-                           </div>
-                           <div class="pl-1 pr-1 profile-i" fxFlex.xs="85" fxFlex.sm="85" fxFlex.md="85" fxFlex.lg="85" fxFlex.xl="85">
-                              <div>
-                                 <span class="post-profile-head">Videography</span>
-                                 <span class="twitter-uname">$400</span>
-                                 <span class="time">(1:30pm - 3:30pm)</span>
-                                 <p>
-                                    “Tomorrow belongs to those who can hear it coming.” - David Bowie
-                                 </p>
-                              </div>
-                              <div class="profile-action"><a href=""><i class="fa fa-retweet"></i></a><a href=""><i class="fa fa-comment-o"></i></a><a href=""><i class="fa fa-heart-o"></i></a></div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div fxLayout="row">
-                           <div fxFlex.xs="15" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="15"> <img class="profile-thumb" src="../../../assets/images/test3.jpg" width="80" height="80" alt="user">
-                           </div>
-                           <div class="pl-1 pr-1 profile-i" fxFlex.xs="85" fxFlex.sm="85" fxFlex.md="85" fxFlex.lg="85" fxFlex.xl="85">
-                              <div>
-                                 <span class="post-profile-head">Decoration</span>
-                                 <span class="twitter-uname">$1250</span>
-                                 <span class="time">(11:30am - 3:30pm)</span>
-                                 <p>our recent work</p>
-                              </div>
-                              <div class="img-wrp" fxLayout="row wrap">
-                                 <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" fxFlex="100">
-                                    <div class="thumb-border">
-                                       <img src="../../../assets/images/blog-1.jpg" alt="user">
-                                    </div>
-                                 </div>
-                                 <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" fxFlex="100">
-                                    <div class="thumb-border">
-                                       <img src="../../../assets/images/blog-2.jpg" alt="user">
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="profile-action"><a href=""><i class="fa fa-retweet"></i></a><a href=""><i class="fa fa-comment-o"></i></a><a href=""><i class="fa fa-heart-o"></i></a></div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
+            <div fxFlex.sm="100" fxFlex.xs="100" fxFlex.md="33.33" fxFlex.lg="33.33" fxFlex.xl="33.33" fxFlex="100" class="m-gap p-gap">
+              <div class="card-shadow">
+                <a [routerLink]="['/clients/clientprofile']">
+                  <mat-card>
+                    <mat-card-header>
+                      <mat-card-title><i class="fa fa-folder-o"></i> Files</mat-card-title>
+                    </mat-card-header>
+                    <div class="card-wheather grad-red">
+                      <div>
+                        <div class="date">Media</div>
+                        <div class="city">659</div>
+                      </div>
+                      <div>
+                        <div class="date">Documents</div>
+                        <div class="city">1</div>
+                      </div>
+                    </div>
+                    <mat-card-actions>
+                      <button mat-button color="grad-blue" routerLink="/cards/basic">Show Me</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </a>
+              </div>
             </div>
-         </div>
-         <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100" class="align-self-center">
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
+<!--       <div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100" class="align-self-center"></div> -->
+    </div>
+    <div fxLayout="row wrap">
+         <div class="profile-content">
+         <div></div></div>  </div>   
+  </div>
 </div>
-

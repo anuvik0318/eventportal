@@ -476,8 +476,8 @@ $hover-font-color:#fff;
 }
 
 .profile-avatar {
-    top: -25%;
-    left: 5%;
+    top: -20%;
+    left: 0%;
     position: absolute;
     width: 200px;
     img {
@@ -524,7 +524,8 @@ $hover-font-color:#fff;
 }
 
 .profile-info {
-    padding-top: 5rem;
+    padding-top: 0rem;
+    padding-left: 15rem;
     span {
         display: block;
         margin-bottom: 0.4rem;
@@ -634,10 +635,10 @@ img {
     }
    
     .profile-avatar {
-        top: -54%;
+        top: 0%;
     }
     .profile-info {
-        padding-top: 2rem;
+        padding-left: 10rem;
     }
 }
 @media(max-width:959px){
