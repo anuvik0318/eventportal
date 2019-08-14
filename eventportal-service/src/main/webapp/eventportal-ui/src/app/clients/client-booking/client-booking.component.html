@@ -1,2 +1,177 @@
-<p>client-booking works!</p>
-<button mat-button color="grad-blue" routerLink="/clients/clientprofile">Back</button>
+<mat-card>
+    <mat-card-title class="card-title">Booked Service(s)</mat-card-title>
+    <div fxLayout="row wrap">
+        <div fxFlex="100" class="m-gap p-gap">
+            <mat-accordion [multi]="true">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <strong>Photography</strong>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            <div class="panel-desc">Aug 10, 11:30AM - 2:30PM</div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div fxLayout="row wrap">
+                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xlg="50"
+                            class="m-gap p-gap">
+                            <mat-card>
+                                <mat-card-title class="card-title-child">Payments</mat-card-title>
+                                <mat-card-content>
+                                    <div fxLayout="row wrap">
+                                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                            class="m-gap p-gap">
+                                            <strong>Income</strong> - $450
+                                        </div>
+                                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                            class="m-gap p-gap">
+                                            <strong>Expense</strong> - $75
+                                        </div>
+                                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                            class="m-gap p-gap">
+                                            <strong>Profit</strong> - $375
+                                        </div>
+                                    </div>
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xlg="50"
+                            class="m-gap p-gap">
+                            <mat-card>
+                                <mat-card-title class="card-title-child">More info</mat-card-title>
+                                <mat-card-content>
+                                    <div fxLayout="row wrap">
+                                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                            class="m-gap p-gap">
+                                            <strong>Duration</strong> - 3hrs
+                                        </div>
+                                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                            class="m-gap p-gap">
+                                            <strong>Price/hr</strong> - $150
+                                        </div>
+                                        <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                            class="m-gap p-gap">
+                                            <strong>Total</strong> - $450
+                                        </div>
+                                    </div>
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <strong> Videography</strong>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            <div class="panel-desc"> Aug 10, 1:30PM - 2:30PM</div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div fxLayout="row wrap">
+                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xlg="50"
+                                class="m-gap p-gap">
+                                <mat-card>
+                                    <mat-card-title class="card-title-child">Payments</mat-card-title>
+                                    <mat-card-content>
+                                        <div fxLayout="row wrap">
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Income</strong> - $400
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Expense</strong> - $0
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Profit</strong> - $400
+                                            </div>
+                                        </div>
+                                    </mat-card-content>
+                                </mat-card>
+                            </div>
+                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xlg="50"
+                                class="m-gap p-gap">
+                                <mat-card>
+                                    <mat-card-title class="card-title-child">More info</mat-card-title>
+                                    <mat-card-content>
+                                        <div fxLayout="row wrap">
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Duration</strong> - 2hrs
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Price/hr</strong> - $200
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Total</strong> - $400
+                                            </div>
+                                        </div>
+                                    </mat-card-content>
+                                </mat-card>
+                            </div>
+                        </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <strong> Decoration</strong>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            <div class="panel-desc"> Aug 10, 1:30PM - 2:30PM</div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div fxLayout="row wrap">
+                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xlg="50"
+                                class="m-gap p-gap">
+                                <mat-card>
+                                    <mat-card-title class="card-title-child">Payments</mat-card-title>
+                                    <mat-card-content>
+                                        <div fxLayout="row wrap">
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Income</strong> - $1250
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Expense</strong> - $250
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Profit</strong> - $1000
+                                            </div>
+                                        </div>
+                                    </mat-card-content>
+                                </mat-card>
+                            </div>
+                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xlg="50"
+                                class="m-gap p-gap">
+                                <mat-card>
+                                    <mat-card-title class="card-title-child">More info</mat-card-title>
+                                    <mat-card-content>
+                                        <div fxLayout="row wrap">
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Duration</strong> - 3hrs
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Price/hr</strong> - N/A
+                                            </div>
+                                            <div fxFlex="100" fxFlex.sm="100" fxFlex.md="33" fxFlex.lg="33" fxFlex.xlg="33"
+                                                class="m-gap p-gap">
+                                                <strong>Total</strong> - $1250
+                                            </div>
+                                        </div>
+                                    </mat-card-content>
+                                </mat-card>
+                            </div>
+                        </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</mat-card>

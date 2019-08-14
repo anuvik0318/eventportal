@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { ClientProfileComponent } from './client-profile/client-profile.component';
 import { ClientListComponent } from './client-list/clientlist.component';
+import { ClientBookingComponent } from './client-booking/client-booking.component';
 
 export const ClientsRoutes: Routes = [{
   path: '',
@@ -15,5 +16,8 @@ export const ClientsRoutes: Routes = [{
   }, {
     path: 'clientlist',
     component: ClientListComponent
+  }, {
+    path: 'clientbooking',
+    component: ClientBookingComponent
   }]
 }];
